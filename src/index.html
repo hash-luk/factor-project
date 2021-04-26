@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factoring a number with JS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="mainboard">
+      <h1>Fatore um número</h1>
+
+      <div class="facNumberInput">
+        <input
+          type="number"
+          name="facnumber"
+          id="facnumber"
+          step="1"
+          placeholder="Digite um valor"
+          onkeypress="clearResult()"
+          max="100.000"
+          min="0"
+        />
+      </div>
+      <p>Resultado</p>
+      <div id="result"></div>
+      <button onclick="factor()">Fatorar</button>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
